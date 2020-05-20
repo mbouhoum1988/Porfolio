@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Portfolio</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="assets/css/widescreen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javaScript/contact.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+</head>
+<body id="home">
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">About</a></li>
+            <li><a href="#who">Potfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">
+               Mouhoub Bouhoum
+            </h1>
+            <h1 class="lead">
+              Full Stack Web Developer
+            </h1>
+            <a href="#what" class="btn">About me</a>
+        </div>
+    </header>
+
+     <section id="what" class="bg-lighy py-1">
+        <div class="container">
+          <h2 class="m-heading text-center"><span class="text-primary">Who</span> Am I</h2>
+          <div class="items">
+            <div class="what-img"></div>
+            <div class="item">
+                <h4 class="m-heading text-center">Mouhoub Bouhoum</h4>
+                <div class="description">
+                    <p>
+                        I am a Full Stack Developer with a background in Mathematics, moved to the US six years ago, my first challenge was to adapt to the American culture which I love a lot and I did. I am a big reader and country music lover.
+                    </p>
+                    <p>
+                        I love to challenge myself and reach for big goals. I love solving problems. I love change and learning new things. And, I love working with people (really).
+                    </p>
+                    <p>
+                        My short-term mission is to utilize new web development skills for freelance work to build relationships and experience. My long-term mission is to help clients with big ideas turn their vision into a finished product.
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <h2 class="m-heading text-center heading-2"><span class="text-primary">My</span> projects</h2>
+    <section id="who" class="bg-lighy py-1">
+        <div class="containter">
+            <div class="img-container">
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img1.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>Plus+</b></p>
+                            <p class="inside">web app that search for different places, build with React, MongoDb, firebase, Mongoose, google map api, ExpressJS</p>
+                            <a class="texts" href="https://mbplaces.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/finalproject" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img22.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>FOOD, Inc</b></p>
+                            <p class="inside">web app that search for food recipes, build with Mysql ExpressJS , sequelize, food2fork api</p>
+                            <a class="texts" href="https://mbfood.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/Project2" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img3.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>Book Serch</b></p>
+                            <p class="inside">web app that search for books, build with google books api, react, mongodb, express and nodejs</p>
+                            <a class="texts" href="https://mbbook.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/react-book-search" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container">
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img4.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>MapPlaces</b></p>
+                            <p class="inside">web app that return driver's position on map, you click on driver's name and the map will zoom to the driver's position, build with React and google map api</p>
+                            <a class="texts" href="https://mbouhoum1988.github.io/maplocation/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/maplocation" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img5.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>ClickyGame</b></p>
+                            <p class="inside">web app that will let you play a game, the rule are simple you don't have to click on the same image more than once, build with React</p>
+                            <a class="texts" href="https://mbouhoum1988.github.io/clickygame/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/clickygame" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img6.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>Friend Finder</b></p>
+                            <p class="inside">web app that match you with a friend based on you answers, build with Node and Express</p>
+                            <a class="texts" href="https://mouhoubfriendfinder.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/FriendFinder" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container">
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img7.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>Train-Arrivals</b></p>
+                            <p class="inside">web app that display the schedule of given train , build with moment.js and firebase</p>
+                            <a class="texts" href="https://mbouhoum1988.github.io/Train-Arrivals/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/Train-Arrivals" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img8.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>Ghiphy</b></p>
+                            <p class="inside">web app that let you search for giphys, build with giphy api and JavaScript</p>
+                            <a class="texts" href="https://mbouhoum1988.github.io/Giphy/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/Giphy" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="position">
+                    <img id="image-flexs" src="assets//Images/img9.jpg">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="inside"><b>Bamazon</b></p>
+                            <p class="inside">Bamazon is an online store where customers can buy products, build with NodeJs</p>
+                            <a class="texts" href="https://github.com/mbouhoum1988/bamazon" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="texts" href="https://github.com/mbouhoum1988/bamazon" target="_blank"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center"><span class="text-primary">Connect</span> With Me</h2>
+            <div class="items">
+                <div class="image"><a href="https://www.linkedin.com/in/mouhoub-bouhoum-41573413a/"><img src="./assets/images/in.jpg" alt="clients"></a></div>
+                <div class="image"><a href="https://github.com/mbouhoum1988?tab=repositories"><img src="./assets/images/git.jpg" alt="clients"></a></div>
+                <div class="image"><a href="https://drive.google.com/file/d/1_mUQUwaNxmhnzDEWAOp12PB5aVjDtuu8/view?usp=sharing"><img src="./assets/images/resume.jpg" alt="clients"></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="m-heading">Contact Us</h2>
+            <p>Please use the form below to contact us</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="enter name">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">email:</label>
+                    <input type="email" name="email" id="email" placeholder="enter email">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="enter phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea type="text" name="message" id="message" placeholder="enter message"></textarea>
+                </div>
+                <input type="submit" value="submit" id="submit" class="btn btn-dark">
+            </form>
+        </div>
+        <div class="map"></div>
+    </section>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAff_wMo0dnJ7dOag7rEQ2MEcE6Y8tfXLA&callback=initMap"async defer></script>
+</body>
+</html> 
