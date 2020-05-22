@@ -37,6 +37,12 @@ $(document).ready(function(){
             );
         }
     });
+
+    $(".toggle-button").on("click", (event) => {
+        event.preventDefault();
+        $(".navbar-links").toggleClass("active")
+    })
+
 });
 
 function initMap(){
