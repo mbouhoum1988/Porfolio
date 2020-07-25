@@ -326,12 +326,11 @@ p{
 
     #showcase{
         background: #333 url(".././Images/show.jpg")no-repeat center center/cover;
-        min-height: 110vh;
-        max-height: 110vh;
+        min-height: 130vh;
     } 
 
     #showcase .showcase-content{
-        min-height: 50rem;
+        height: 54rem;
         top: 0px;
     }
 
@@ -362,6 +361,9 @@ p{
     .heading-2 {
         margin: 2rem;
         text-align: center;
+    }
+    .m-heading {
+        margin-top: 20px;
     }
     
     #who .img-container{
